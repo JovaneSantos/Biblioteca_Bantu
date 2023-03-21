@@ -1,0 +1,71 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use App\Models\Evento;
+//use Illuminate\Http\Request;
+
+class EventoControler extends Controller
+{
+    public function index(){
+        $eventos=Evento::all();
+        $vector=[9,8,7,6,5];
+        $nomes=["João","Alexandre","Miguel","Alberto"];
+        $nome="Jovani";
+    return view('welcome',['nome'=>$nome, 'idade'=>29,'arr'=>$vector, 'nomes'=>$nomes, 'eventos'=>$eventos]);
+    }
+    public function contact($id){
+        $busca=request('search');
+        return view('contactos',['id'=>$id,'busca'=>$busca]);
+    }
+}
+
+
+<h1><button type="button" class="btn btn-primary" onclick="Adicionar()">Clica Cara</button> Bem vindo a página</h1>
+    <br>
+            
+ <h5><button type="button"  class="btn btn-danger"  onclick="remover()" Rodapé>remover</button><h5>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<?php
+
+namespace App\Http\Controllers;
+
+use App\Models\Evento;
+//use Illuminate\Http\Request;
+
+class EventoControler extends Controller
+{
+    public function index(){
+        $eventos=Evento::all();
+        $vector=[9,8,7,6,5];
+        $nomes=["João","Alexandre","Miguel","Alberto"];
+        $nome="Jovani";
+    return view('welcome',['nome'=>$nome, 'idade'=>29,'arr'=>$vector, 'nomes'=>$nomes, 'eventos'=>$eventos]);
+    }
+    public function contact($id){
+        $busca=request('search');
+        return view('contactos',['id'=>$id,'busca'=>$busca]);
+    }
+}

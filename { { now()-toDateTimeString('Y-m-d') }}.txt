@@ -1,0 +1,17 @@
+{ { now()-toDateTimeString('Y-m-d') }}
+
+O Laravel tem a Carbondependência associada a ele.
+
+Carbon::now(), inclua o Carbon\Carbonnamespace se necessário.
+
+Editar (uso e documentos)
+
+Digamos que eu queira recuperar a data e a hora e gerá-la como uma string.
+
+$mytime = Carbon\Carbon::now();
+echo $mytime->toDateTimeString();
+
+
+
+334O5f!9
+924195384
